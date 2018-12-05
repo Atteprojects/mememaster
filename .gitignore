@@ -3,6 +3,12 @@ firebase.json
 firestore.indexes.json
 firestore.rules
 storage.rules
+functions
+.firebase
+.firebaserc
+node_modules
+.git
+
 
 # Logs
 logs
