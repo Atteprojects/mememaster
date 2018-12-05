@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MemeMaster</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.6.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.6.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.6.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.6.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.6.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav  {
+          background-color: #6BC0AB;
+          height: 56px;
+          width: 100%;
+          font-size: 0;
+      }
+      
+      .nav-back {
+        width: 20%;
+        display: inline-block;
+        height: 100%;
+      }
+
+      .nav-logo {
+        width: 60%;
+        display: inline-block;
+        padding-top: 10px;
+        text-align: center;
+      }
+
+      .nav-logo img {
+        width: 200px;
+      }
+
+      footer {
+        /* background-color: #DBDBDB; */
+        
+        height: 56px;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        font-size: 0;
+      }
+
+      section#memes {
+        height: calc(100vh - 112px);
+        background-color: #FFF; 
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+      }
+
+      section#memes img {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .footer-section-1 {
+        width: 25%;
+        background-color: yellow;
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+      }
+      .footer-section-2 {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        background-color: green;
+        margin: 0;
+        text-align: center;
+      }
+      .footer-section-3 {
+        width: 25%;
+        height: 100%;
+        background-color: yellow;
+        display: inline-block;
+        margin: 0;
+      }
+
+      .footer-section-2 a {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-back"></div>
+      <div class="nav-logo">
+          <a id="logo" href="#"><img src="images/mememaster-logo.png"></a>
+      </div>
+    </nav>
+    <section id="memes">
+      <img src="images/meme1.jpg">
+      <img src="images/meme1.jpg">
+      <img src="images/meme1.jpg">
+      <img src="images/meme1.jpg">
+    </section>
+    <footer>
+      <div class="footer-section-1">
+
+      </div>
+      <div class="footer-section-2">
+        <a class="add-meme-btn">+</a>
+      </div>
+      <div class="footer-section-3">
+
+      </div>
+    </footer>
+  </body>
+</html>
