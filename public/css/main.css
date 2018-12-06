@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+nav  {
+    background-color: #6BC0AB;
+    height: 56px;
+    width: 100%;
+    font-size: 0;
+}
+  
+.nav-back {
+width: 20%;
+display: inline-block;
+height: 100%;
+}
+
+.nav-logo {
+width: 60%;
+display: inline-block;
+padding-top: 10px;
+text-align: center;
+}
+
+  .nav-logo img {
+    width: 200px;
+  }
+
+footer {
+/* background-color: #DBDBDB; */
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0;
+}
+
+section#memes {
+    height: calc(100vh - 112px);
+    background-color: #FFF; 
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+section#memes img {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-section-1 {
+    width: 25%;
+    background-color: yellow;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+}
+.footer-section-2 {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background-color: green;
+  margin: 0;
+  text-align: center;
+}
+.footer-section-3 {
+  width: 25%;
+  height: 100%;
+  background-color: yellow;
+  display: inline-block;
+  margin: 0;
+}
+
+.footer-section-2 a {
+  font-size: 16px;
+}
