@@ -1,0 +1,23 @@
+html {
+    margin: 0;
+    padding: 0;
+  }
+
+body  {
+    background-color: #6BC0AB;
+    height: 100%;
+    width: 100%;
+}
+  
+.nav-logo {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.nav-logo img {
+    width: 300px;
+}
