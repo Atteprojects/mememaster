@@ -15,7 +15,7 @@
           <a id="logo" href="#">Add meme</a>
       </div>
     </nav>
-    <section id="memes">
+    <section id="main" class="add-meme">
       <div class="select-img">
           <input type="text" name="img-url" placeholder="Image url">
           <button>Get Image</button>
@@ -26,9 +26,15 @@
               Upload Image
           </label>
       </div>
+      <div id="top-text">
+          <input type="text" id="top-text-input" placeholder="Enter top text here">
+      </div>
       <div class="meme-canvas">
           <img class="meme-img" id="uploadedImg" src="images/meme1.jpg">
       </div>
+      <div id="bottom-text">
+            <input type="text" id="bottom-text-input" placeholder="Enter bottom text here">
+        </div>
       <section class="all-btns">
           <div class="public-toggle">
               Make public <input type="radio" name="make-public" value="yes">Yes
