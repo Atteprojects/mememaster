@@ -21,8 +21,8 @@
           <button>Get Image</button>
       </div>
       <div class="upload-img">
-          <input type="file" id="imgFile" onchange="uplaodImage(this);">
-          <label for="imgFile">
+          <input type="file" id="imgLoader">
+          <label for="imgLoader">
               Upload Image
           </label>
       </div>
@@ -30,7 +30,10 @@
           <input type="text" id="top-text-input" placeholder="Enter top text here">
       </div>
       <div class="meme-canvas">
-          <img class="meme-img" id="uploadedImg" src="images/meme1.jpg">
+          <!-- <img class="meme-img" id="uploadedImg" src="images/meme1.jpg"> -->
+          <canvas id="imgCanvas">
+
+          </canvas>
       </div>
       <div id="bottom-text">
             <input type="text" id="bottom-text-input" placeholder="Enter bottom text here">
