@@ -41,7 +41,7 @@ footer {
   font-size: 0;
 }
 
-section#memes {
+section#main {
   height: calc(100vh - 105px);
   background-color: #FFF; 
   scroll-behavior: smooth;
@@ -52,7 +52,7 @@ section#memes {
   margin-right: auto;
 }
 
-section#memes img  {
+section#main img  {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -95,12 +95,12 @@ section#memes img  {
   color: #000;
 }
 
-section#memes .select-img {
+section#main .select-img {
   text-align: center;
   padding-top: 15px;
 }
 
-section#memes .select-img input {
+section#main.select-img input {
   height: 35px;
   border-radius: 20px;
   border: 1px solid #000;
@@ -109,12 +109,12 @@ section#memes .select-img input {
 
 }
 
-section#memes .upload-img {
+section#main .upload-img {
   text-align: center;
   padding-top: 15px; 
 }
 
-section#memes .select-img button {
+section#main .select-img button {
   margin-left: 5px;
   background-color: #417AE7;
   color: #FFF;
@@ -125,7 +125,7 @@ section#memes .select-img button {
   padding-right: 8px; 
 }
 
-section#memes .upload-img label {
+section#main .upload-img label {
   display:inline-block;
   padding: 5px;
   border-radius: 20px;
@@ -135,18 +135,18 @@ section#memes .upload-img label {
   width: 320px;
 }
 
-section#memes .upload-img input {
+section#main .upload-img input {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
 }
 
-section#memes .meme-canvas {
+section#main .meme-canvas {
   width: 100%;
   padding-top: 8px; 
 }
 
-section#memes .meme-canvas img {
+section#main .meme-canvas img {
   width: 100%;
 }
 
@@ -213,4 +213,25 @@ section#memes .meme-canvas img {
   background-color: #FFF;
   padding: 8px;
   border-radius: 20px;
+}
+
+.add-meme #top-text,
+.add-meme #bottom-text {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px; 
+}
+
+.add-meme #top-text-input,
+.add-meme #bottom-text-input {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 330px; 
+}
+
+.add-meme #imgCanvas {
+  display: block;
+  max-width: 400px;
+  width: 100%;
 }
