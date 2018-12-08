@@ -133,6 +133,12 @@ section#memes .upload-img label {
   background-color: #FFF; 
 }
 
+section#memes .upload-img input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
 section#memes .meme-canvas {
   width: 100%;
   padding-top: 8px; 
