@@ -21,14 +21,13 @@
           <button>Get Image</button>
       </div>
       <div class="upload-img">
-          <button>Upload Image</button>
-          <input type="file" id="imgFile">
+          <input type="file" id="imgFile" onchange="uplaodImage(this);">
           <label for="imgFile">
               Upload Image
           </label>
       </div>
       <div class="meme-canvas">
-          <img class="meme-img" src="images/meme1.jpg">
+          <img class="meme-img" id="uploadedImg" src="images/meme1.jpg">
       </div>
       <section class="all-btns">
           <div class="public-toggle">
@@ -74,4 +73,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>
