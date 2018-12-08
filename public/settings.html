@@ -4,6 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MemeMaster - Settings</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD3tdwpOUxlmyFTwlMqgc_exRLicJLBJjo",
+        authDomain: "cse134b-hw6-mememaster.firebaseapp.com",
+        databaseURL: "https://cse134b-hw6-mememaster.firebaseio.com",
+        projectId: "cse134b-hw6-mememaster",
+        storageBucket: "cse134b-hw6-mememaster.appspot.com",
+        messagingSenderId: "725839357658"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -16,7 +31,9 @@
       </div>
     </nav>
     <section id="memes">
-      
+      <div class="select-img">
+        <button id="signOutBtn">Sign Out</button>
+      </div>
     </section>
     <footer>
       <div class="footer-section-1">
@@ -36,4 +53,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/settings.js"></script>
 </html>

@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MemeMaster</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.6.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.6.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.6.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.6.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.6.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD3tdwpOUxlmyFTwlMqgc_exRLicJLBJjo",
+        authDomain: "cse134b-hw6-mememaster.firebaseapp.com",
+        databaseURL: "https://cse134b-hw6-mememaster.firebaseio.com",
+        projectId: "cse134b-hw6-mememaster",
+        storageBucket: "cse134b-hw6-mememaster.appspot.com",
+        messagingSenderId: "725839357658"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <link rel="stylesheet" href="css/login.css">
   </head>
   <body>
@@ -21,13 +26,14 @@
         <a id="logo" href="#"><img src="images/mememaster-logo.png"></a>
     </div>
     <div class="userInfo">
-        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="email" id="email" placeholder="Email">
         <br><br>
-        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password">
         <br><br><br><br>
-        <button>Sign In</button>
+        <button id="signInBtn">Sign In</button>
         <br><br>
-        <button>Create Account</button>
+        <button id="signUpBtn">Create Account</button>
     </div>
   </body>
+  <script src="js/login.js"></script>
 </html>
