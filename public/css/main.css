@@ -125,7 +125,7 @@ section#memes .select-img button {
   padding-right: 8px; 
 }
 
-section#memes .upload-img button {
+section#memes .upload-img label {
   width: 330px;
   height: 39px;
   border-radius: 20px;
